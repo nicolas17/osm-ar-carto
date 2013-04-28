@@ -182,7 +182,7 @@
   }
 
   [feature = 'amenity_parking'][zoom >= 16] {
-    marker-file: url('symbols/parking.svg');
+    point-file: url('symbols/parking.e.16.png');
     marker-placement: interior;
     marker-clip: false;
     marker-fill: @transportation-icon;
