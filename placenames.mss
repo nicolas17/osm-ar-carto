@@ -92,7 +92,7 @@
       text-min-distance: 10;
     }
     [zoom >= 11] {
-      text-size: 11;
+      text-size: 12;
       text-wrap-width: 70;
     }
     [zoom >= 14] {
