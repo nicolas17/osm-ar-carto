@@ -1542,8 +1542,8 @@
   [feature = 'amenity_pharmacy'][zoom >= 17] {
     text-name: "[name]";
     text-size: 8;
-    text-dy: 10;
-    text-fill: #da0092;
+    text-dy: 9;
+    text-fill: #009200;
     text-face-name: @book-fonts;
     text-halo-radius: 1;
     text-wrap-width: @standard-wrap-width;
