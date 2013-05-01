@@ -88,7 +88,7 @@
       text-wrap-width: 20;
     }
     [zoom >= 11] {
-      text-size: 10;
+      text-size: 12;
     }
     [zoom >= 14] {
       text-size: 14;
