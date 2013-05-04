@@ -92,6 +92,9 @@
       text-min-distance: 10;
     }
     [zoom >= 11] {
+      text-size: 10;
+    }
+    [zoom >= 12] {
       text-size: 12;
       text-wrap-width: 70;
     }
