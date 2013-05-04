@@ -298,6 +298,11 @@
     point-placement: interior;
   }
 
+  [shop = 'seafood'][zoom >= 17]::shop {
+    point-file: url('symbols/shop_fish.png');
+    point-placement: interior;
+  }
+
   [shop = 'clothes']::shop,
   [shop = 'fashion']::shop {
     [zoom >= 17] {
@@ -849,6 +854,7 @@
   [shop = 'doityourself']::shop,
   [shop = 'hairdresser']::shop,
   [shop = 'butcher']::shop,
+  [shop = 'seafood']::shop,
   [shop = 'car']::shop,
   [shop = 'car_repair']::shop,
   [shop = 'bicycle']::shop,
@@ -862,6 +868,9 @@
       text-halo-radius: 1;
       text-wrap-width: 12;
       text-placement: interior;
+      [shop = 'seafood'] {
+        text-dy: 7;
+      }
     }
   }
 
