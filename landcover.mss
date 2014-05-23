@@ -369,7 +369,7 @@
   [way_area >= 20000][zoom >= 16],
   [zoom >= 17] {
     text-name: "[name]";
-    text-size: 11;
+    text-size: 12;
     text-fill: #333;
     text-face-name: @book-fonts;
     text-halo-radius: 2;

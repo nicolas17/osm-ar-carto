@@ -3,7 +3,7 @@
     point-file: url('symbols/helipad.p.16.png');
     text-name: "[name]";
     text-size: 8;
-    text-fill: #6692da;
+    text-fill: #020711;
     text-dy: -10;
     text-face-name: @bold-fonts;
     text-halo-radius: 1;
@@ -18,7 +18,7 @@
     }
     text-size: 9;
     text-name: "[name]";
-    text-fill: #6692da;
+    text-fill: #020711;
     text-halo-radius: 1;
     text-placement: interior;
     text-face-name: @bold-fonts;
@@ -31,7 +31,7 @@
     }
     text-name: "[name]";
     text-size: 8;
-    text-fill: #6692da;
+    text-fill: #020711;
     text-face-name: @oblique-fonts;
     text-halo-radius: 1;
     text-placement: interior;

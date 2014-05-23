@@ -1,6 +1,6 @@
 #admin-01234 {
   line-opacity: 0.3;
-  line-color: magenta;
+  line-color: gold;
   [admin_level = '2'],
   [admin_level = '3'] {
     [zoom >= 4] {
@@ -22,7 +22,7 @@
     }
   }
   [admin_level = '4'] {
-    line-color: magenta;
+    line-color: gold;
     [zoom >= 4] {
       line-width: 0.6;
       line-dasharray: 4,3;
@@ -39,14 +39,14 @@
 
 #admin-5678 {
   line-opacity: 0.3;
-  line-color: magenta;
+  line-color: gold;
   [admin_level = '5'][zoom >= 11] {
     line-width: 2;
     line-dasharray: 6,3,2,3,2,3;
     line-opacity: 0.2;
   }
   [admin_level = '6'][zoom >= 11] {
-    line-color: magenta;
+    line-color: gold;
     line-width: 2;
     line-dasharray: 6,3,2,3;
     line-opacity: 0.2;
@@ -54,7 +54,7 @@
   [admin_level = '7'],
   [admin_level = '8'] {
     [zoom >= 12] {
-      line-color: magenta;
+      line-color: gold;
       line-width: 1.5;
       line-dasharray: 5,2;
       line-opacity: 0.3;
@@ -64,7 +64,7 @@
 
 #admin-other {
   line-opacity: 0.3;
-  line-color: magenta;
+  line-color: gold;
   [admin_level = '9'],
   [admin_level = '10'] {
     [zoom >= 13] {

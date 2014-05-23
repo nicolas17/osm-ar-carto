@@ -385,7 +385,7 @@
   [amenity = 'beirgarten']::amenity {
     [zoom >= 17] {
       text-name: "[name]";
-      text-fill: #734a08;
+      text-fill: #3a3a3a;
       text-size: 10;
       text-dy: 9;
       text-face-name: @bold-fonts;
@@ -398,7 +398,7 @@
   [amenity = 'bar'][zoom >= 17]::amenity {
     text-name: "[name]";
     text-size: 10;
-    text-fill: #734a08;
+    text-fill: #060011;
     text-dy: 11;
     text-face-name: @bold-fonts;
     text-halo-radius: 1;
@@ -411,7 +411,7 @@
     [zoom >= 17] {
       text-name: "[name]";
       text-size: 10;
-      text-fill: #734a08;
+      text-fill: #060011;
       text-dy: 12;
       text-face-name: @bold-fonts;
       text-halo-radius: 1;
@@ -422,7 +422,7 @@
   [amenity = 'cinema'][zoom >= 17]::amenity {
     text-name: "[name]";
     text-size: 10;
-    text-fill: #734a08;
+    text-fill: #060011;
     text-dy: 14;
     text-face-name: @bold-fonts;
     text-halo-radius: 1;
@@ -431,7 +431,7 @@
 
   [amenity = 'parking'][zoom >= 17]::amenity {
     text-name: "[name]";
-    text-size: 9;
+    text-size: 10;
     text-fill: #0066ff;
     text-dy: 9;
     text-face-name: @book-fonts;
@@ -446,7 +446,7 @@
   [amenity = 'police'][zoom >= 17]::amenity {
     text-name: "[name]";
     text-size: 10;
-    text-fill: #734a08;
+    text-fill: #060011;
     text-dy: 10;
     text-face-name: @book-fonts;
     text-halo-radius: 1;
@@ -457,7 +457,7 @@
   [amenity = 'fire_station'][zoom >= 17]::amenity {
     text-name: "[name]";
     text-size: 10;
-    text-fill: #734a08;
+    text-fill: #060011;
     text-dy: 9;
     text-face-name: @book-fonts;
     text-halo-radius: 1;
@@ -491,14 +491,14 @@
     [zoom >= 13] {
       text-name: "[name]";
       text-size: 10;
-      text-fill: brown;
+      text-fill: #060011;
       text-dy: 5;
       text-face-name: @book-fonts;
       text-halo-radius: 1;
       text-placement: interior;
       ele/text-name: "[ele]";
       ele/text-size: 9;
-      ele/text-fill: brown;
+      ele/text-fill: #060011;
       ele/text-dy: 6;
       ele/text-face-name: @oblique-fonts;
       ele/text-halo-radius: 1;
@@ -512,7 +512,7 @@
   [natural = 'cave_entrance'][zoom >= 15]::natural {
     text-name: "[name]";
     text-size: 10;
-    text-fill: brown;
+    text-fill: #060011;
     text-dy: 9;
     text-face-name: @book-fonts;
     text-halo-radius: 1;
@@ -525,7 +525,7 @@
     [zoom >= 17] {
       text-name: "[name]";
       text-size: 9;
-      text-fill: brown;
+      text-fill: #060011;
       text-dy: 12;
       text-face-name: @book-fonts;
       text-halo-radius: 1;
@@ -730,7 +730,7 @@
   [tourism = 'theme_park'][zoom >= 14]::tourism {
     text-name: "[name]";
     text-size: 8;
-    text-fill: #734a08;
+    text-fill: #060011;
     text-face-name: @book-fonts;
     text-halo-radius: 1;
     text-wrap-width: 30;
@@ -744,7 +744,7 @@
     text-name: "[name]";
     text-size: 10;
     text-dy: 10;
-    text-fill: #734a08;
+    text-fill: #060011;
     text-face-name: @book-fonts;
     text-halo-radius: 1;
     text-placement: interior;
@@ -753,7 +753,7 @@
   [amenity = 'prison'][zoom >= 17]::amenity {
     text-name: "[name]";
     text-size: 10;
-    text-fill: #734a08;
+    text-fill: #060011;
     text-dy: 16;
     text-face-name: @book-fonts;
     text-halo-radius: 1;
@@ -817,7 +817,7 @@
   [man_made = 'windmill'][zoom >= 17]::man_made {
     text-name: "[name]";
     text-size: 9;
-    text-fill: #734a08;
+    text-fill: #060011;
     text-dy: 12;
     text-face-name: @book-fonts;
     text-halo-radius: 1;
@@ -901,7 +901,7 @@
   [aeroway = 'gate'][zoom >= 17]::aeroway {
     text-name: "[ref]";
     text-size: 10;
-    text-fill: #aa66cc;
+    text-fill: #0f0514;
     text-face-name: @book-fonts;
     text-halo-radius: 1;
     text-wrap-width: 10;

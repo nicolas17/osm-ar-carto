@@ -2,7 +2,7 @@
 
 line-color: transparent;
 @motorway-fill: #804677;
-@trunk-fill: #9d8450;
+@trunk-fill: magenta;
 @primary-fill: #5c2e6d;
 @secondary-fill: #832e6d;
 @tertiary-fill: purple;

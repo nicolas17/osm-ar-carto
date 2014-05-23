@@ -7,6 +7,7 @@
     text-face-name: @book-fonts;
     text-fill: #444;
     text-size: 11;
+    text-halo-radius: 1;
   }
 }
 
@@ -18,6 +19,7 @@
     text-face-name: @book-fonts;
     text-size: 10;
     text-fill: #444;
+    text-halo-radius: 1;
     [zoom >= 18] {
       text-size: 11;
     }

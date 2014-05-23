@@ -138,13 +138,13 @@
   [place = 'farm'] {
     [zoom >= 14] {
       text-name: "[name]";
-      text-size: 9;
+      text-size: 10;
       text-fill: #000;
       text-face-name: @book-fonts;
       text-halo-radius: 1;
     }
     [zoom >= 16] {
-      text-size: 11;
+      text-size: 12;
       text-fill: #444;
     }
   }
