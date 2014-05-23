@@ -1,5 +1,6 @@
 /* For the main linear features, such as roads and railways. */
 
+line-color: transparent;
 @motorway-fill: #804677;
 @trunk-fill: #9d8450;
 @primary-fill: #5c2e6d;
@@ -2270,6 +2271,7 @@
 }
 
 #roads-text-name {
+  line-color: transparent;
   [highway = 'trunk'],
   [highway = 'primary'] {
     [zoom >= 13] {

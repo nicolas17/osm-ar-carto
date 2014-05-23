@@ -12,10 +12,10 @@
 .country {
   [place = 'country'][zoom >= 2][zoom < 6] {
     text-name: "[name]";
-    text-size: 9;
-    text-fill: #9d6c9d;
+    text-size: 18;
+    text-fill: #333;
     text-face-name: @book-fonts;
-    text-halo-radius: 1;
+    text-halo-radius: 4;
     text-wrap-width: 20;
     [zoom >= 4] {
       text-size: 11;
@@ -26,16 +26,16 @@
 .state {
   [place = 'state'][zoom >= 4][zoom < 9] {
     text-name: "[ref]";
-    text-size: 14;
-    text-fill: #9d6c9d;
+    text-size: 19;
+    text-fill: #000;
     text-face-name: @oblique-fonts;
-    text-halo-radius: 1;
+    text-halo-radius: 2;
     text-wrap-width: 0;
     [zoom >= 5] {
       text-name: "[name]";
     }
     [zoom >= 7] {
-      text-size: 11;
+      text-size: 15;
     }
   }
 }
@@ -46,7 +46,7 @@
     text-size: 12;
     text-fill: #000;
     text-face-name: @book-fonts;
-    text-halo-radius: 4;
+    text-halo-radius: 3;
     [zoom >= 6] {
       text-size: 11;
     }
@@ -95,7 +95,7 @@
     }
     [zoom >= 14] {
       text-size: 16;
-      text-fill: #777777;
+      text-fill: #444;
     }
   }
 }
@@ -109,7 +109,7 @@
     text-halo-radius: 1;
     [zoom >= 14] {
       text-size: 13;
-      text-fill: #777777;
+      text-fill: #444;
     }
   }
 }
@@ -125,7 +125,7 @@
       text-halo-radius: 1;
       [zoom >= 15] {
         text-size: 12;
-        text-fill: #777777;
+        text-fill: #444;
       }
     }
   }
@@ -145,7 +145,7 @@
     }
     [zoom >= 16] {
       text-size: 11;
-      text-fill: #777777;
+      text-fill: #444;
     }
   }
 }
