@@ -4,8 +4,8 @@ line-color: transparent;
 @motorway-fill: #804677;
 @trunk-fill: #9d8450;
 @primary-fill: #5c2e6d;
-@secondary-fill: #fed7a5;
-@tertiary-fill: #ffffb3;
+@secondary-fill: #832e6d;
+@tertiary-fill: purple;
 @residential-fill: #dedede;
 @residential-thin: #999;
 @service-fill: #ddd;
@@ -819,7 +819,10 @@ line-color: transparent;
     }
   }
 
-  [feature = 'highway_road'][zoom >= 13] {
+  [feature = 'highway_road'][zoom >= 1]{
+      line-opacity:0.05;
+    }
+    [zoom >= 13] {
     line-width: 2;
     line-color: @road-fill;
     line-join: round;
@@ -2247,6 +2250,7 @@ line-color: transparent;
 
   [highway = 'unclassified'],
   [highway = 'residential'] {
+    line-color: transparent;
     [zoom >= 15][bridge = 'no'] {
       text-name: "[ref]";
       text-size: 13;
