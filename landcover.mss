@@ -1,5 +1,6 @@
 #landcover {
- [feature = 'leisure_swimming_pool'][zoom >= 14] {
+  polygon-opacity: 0.2;
+  [feature = 'leisure_swimming_pool'][zoom >= 14] {
     polygon-fill: @water-color;
     line-color: blue;
     line-width: 0.5;
@@ -16,7 +17,6 @@
   [feature = 'tourism_picnic_site'] {
     [zoom >= 13] {
       polygon-fill: #ccff99;
-      polygon-opacity: 0.5;
       line-color: #666;
       line-width: 0.3;
     }
@@ -60,6 +60,7 @@
   }
 
   [feature = 'landuse_residential'][zoom >= 10] {
+    polygon-opacity: 0.1;
     polygon-fill: #ddd;
   }
 
