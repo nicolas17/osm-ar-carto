@@ -2128,6 +2128,7 @@
 }
 
 #roads-text-ref-low-zoom {
+  line-color: transparent;
   [highway = 'motorway'][length < 9] {
     [zoom >= 10][zoom < 13] {
       shield-name: "[ref]";
@@ -2178,6 +2179,7 @@
 }
 
 #roads-text-ref {
+  line-color: transparent;
   [highway = 'motorway'][length < 9] {
     [zoom >= 13] {
       shield-name: "[ref]";

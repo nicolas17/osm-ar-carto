@@ -351,11 +351,12 @@
     line-opacity: 0.329;
   }
   [leisure = 'nature_reserve'][zoom >= 10] {
+    polygon-opacity: 0.2;
     polygon-pattern-file: url('symbols/nature_reserve5.png');
-    polygon-opacity: 0.3;
     line-color: #6c3;
     line-width: 0.5;
     [zoom >= 14] {
+      polygon-opacity: 0.2;
       polygon-pattern-file: url('symbols/nature_reserve6.png');
       line-width: 1;
     }
@@ -371,7 +372,7 @@
     text-size: 11;
     text-fill: #333;
     text-face-name: @book-fonts;
-    text-halo-radius: 4;
+    text-halo-radius: 2;
     text-wrap-width: 20;
   }
 }
