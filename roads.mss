@@ -808,6 +808,11 @@ line-color: transparent;
   [feature = 'highway_residential'],
   [feature = 'highway_unclassified'],
   [feature = 'highway_road'] {
+    [zoom >= 1][zoom < 10] {
+      line-width: 0.5;
+      line-opacity: 0.1;
+      line-color: @residential-thin;
+    }
     [zoom >= 10][zoom < 13] {
       line-width: 1;
       line-color: @residential-thin;
