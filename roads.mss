@@ -602,6 +602,7 @@
 
 #minor-roads-fill::links {
   line-opacity: 0.75;
+  line-color: transparent;
   [feature = 'highway_motorway_link'][tunnel != 'yes'] {
     [zoom >= 12] {
       line-width: 0.5;
@@ -664,7 +665,8 @@
 }
 
 #minor-roads-fill {
-  line-opacity: 0.75;
+  line-color: transparent;
+  line-opacity: 0.65;
 
   /*
    * The construction rules for small roads are strange, since if construction is null its assumed that
@@ -973,11 +975,11 @@
       line-opacity: 0.4;
       line-cap: round;
       line-join: round;
-      /*b/line-width: 0.5;
+      b/line-width: 0.5;
       b/line-dasharray: 6,3;
-      b/line-color: black;
+      b/line-color: brown;
       b/line-join: round;
-      b/line-cap: round;*/
+      b/line-cap: round;
     }
   }
 
@@ -1342,11 +1344,11 @@
     b/line-opacity: 0.4;
     b/line-join: round;
     b/line-cap: round;
-    /*c/line-width: 0.5;
-    c/line-color: black;
+    c/line-width: 0.5;
+    c/line-color: brown;
     c/line-dasharray: 6,3;
     c/line-cap: round;
-    c/line-join: round;*/
+    c/line-join: round;
   }
 }
 
@@ -1433,7 +1435,7 @@
 }
 
 .bridges {
-  line-opacity: 0.75;
+  line-opacity: 0.5;
   ::bridges_casing {
     [feature = 'highway_motorway'],
     [feature = 'highway_motorway_link'] {
@@ -1874,7 +1876,7 @@
 
     [feature = 'highway_path'][zoom >= 14] {
       line-width: 0.5;
-      line-color: black;
+      line-color: brown;
       line-dasharray: 6,3;
       line-join: round;
       line-cap: round;
