@@ -19,7 +19,7 @@
   [waterway = 'canal'] {
     [zoom >= 9]::waterway {
       polygon-gamma: 0.75;
-      polygon-opacity: 0.5;
+      polygon-opacity: 0.4;
       polygon-fill: @water-color;
     }
   }
@@ -37,7 +37,7 @@
   [natural = 'bay']::natural {
     [zoom >= 6] {
       polygon-fill: @water-color;
-      polygon-opacity: 0.5;
+      polygon-opacity: 0.4;
       polygon-gamma: 0.75;
     }
   }
@@ -52,7 +52,7 @@
   [natural = 'wetland'] {
     [zoom >= 13] {
       polygon-pattern-file: url('symbols/marsh.png');
-      polygon-opacity: 0.5;
+      polygon-opacity: 0.3;
     }
   }
 }

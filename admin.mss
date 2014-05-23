@@ -4,10 +4,12 @@
   [admin_level = '2'],
   [admin_level = '3'] {
     [zoom >= 4] {
+      line-color: transparent;
       line-width: 0.4;
       line-opacity: 0.5;
     }
     [zoom >= 7] {
+      line-color: transparent;
       line-width: 2;
     }
     [zoom >= 10] {
@@ -24,11 +26,13 @@
   [admin_level = '4'] {
     line-color: gold;
     [zoom >= 4] {
+      line-color: transparent;
       line-width: 0.6;
       line-dasharray: 4,3;
       line-opacity: 0.3;
     }
     [zoom >= 7] {
+      line-color: transparent;
       line-width: 1;
     }
     [zoom >= 11] {
@@ -90,7 +94,7 @@
 #national-park-boundaries {
   polygon-opacity: 0.05;
   [zoom >= 7] {
-    polygon-opacity: 0.4;
+    polygon-opacity: 0.25;
     [zoom < 13] {
       polygon-fill: green;
     }
