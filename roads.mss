@@ -401,6 +401,7 @@ line-color: transparent;
 
 #minor-roads-casing::links {
   line-opacity: 0.75;
+  line-color: transparent;
   [highway = 'raceway'] {
     [zoom >= 12] {
       line-color: pink;
@@ -471,6 +472,7 @@ line-color: transparent;
 
 #minor-roads-casing {
   line-opacity: 0.75;
+  line-color: transparent;
   [highway = 'motorway'][tunnel != 'yes'] {
     [zoom >= 12] {
       line-width: 3;
@@ -666,9 +668,8 @@ line-color: transparent;
 }
 
 #minor-roads-fill {
-  line-color: transparent;
   line-opacity: 0.65;
-
+  line-opacity: 0.75;
   /*
    * The construction rules for small roads are strange, since if construction is null its assumed that
    * it's a more major road. The line-width = 0 could be removed by playing with the query to set a construction
