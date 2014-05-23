@@ -318,6 +318,7 @@
 }
 
 #sports-grounds {
+  polygon-opacity: 0.2;
   [leisure = 'sports_centre'],
   [leisure = 'stadium'] {
     polygon-opacity: 0.2;
@@ -342,6 +343,7 @@
 
 
 #landuse-overlay {
+  polygon-opacity: 0.2;
   [landuse = 'military'][zoom >= 10]::landuse {
     polygon-pattern-file: url('symbols/military_red_hz2.png');
     line-color: #f55;
@@ -366,10 +368,10 @@
   [way_area >= 20000][zoom >= 16],
   [zoom >= 17] {
     text-name: "[name]";
-    text-size: 10;
-    text-fill: #000033;
+    text-size: 11;
+    text-fill: #333;
     text-face-name: @book-fonts;
-    text-halo-radius: 1;
+    text-halo-radius: 4;
     text-wrap-width: 20;
   }
 }
@@ -413,6 +415,7 @@
 
 
 #theme-park {
+  polygon-opacity: 0.2;
   [tourism = 'theme_park'][zoom >= 13] {
     line-color: #734a08;
     line-width: 1.5;

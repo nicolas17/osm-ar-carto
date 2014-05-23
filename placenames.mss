@@ -26,7 +26,7 @@
 .state {
   [place = 'state'][zoom >= 4][zoom < 9] {
     text-name: "[ref]";
-    text-size: 9;
+    text-size: 14;
     text-fill: #9d6c9d;
     text-face-name: @oblique-fonts;
     text-halo-radius: 1;
@@ -43,10 +43,10 @@
 #placenames-capital {
   [zoom >= 5][zoom < 15] {
     text-name: "[name]";
-    text-size: 10;
+    text-size: 12;
     text-fill: #000;
     text-face-name: @book-fonts;
-    text-halo-radius: 1;
+    text-halo-radius: 4;
     [zoom >= 6] {
       text-size: 11;
     }
@@ -61,10 +61,10 @@
   [place = 'metropolis'] {
     [zoom >= 6][zoom < 15] {
       text-name: "[name]";
-      text-size: 9;
+      text-size: 12;
       text-fill: #000;
       text-face-name: @book-fonts;
-      text-halo-radius: 1;
+      text-halo-radius: 3;
       [zoom >= 9] {
         text-size: 11;
       }
@@ -81,20 +81,20 @@
   [place = 'small_town'] {
     [zoom >= 9] {
       text-name: "[name]";
-      text-size: 9;
+      text-size: 12;
       text-fill: #000;
       text-face-name: @book-fonts;
       text-halo-radius: 1;
       text-wrap-width: 20;
     }
     [zoom >= 11] {
-      text-size: 10;
+      text-size: 13;
     }
     [zoom >= 12] {
-      text-size: 12;
+      text-size: 14;
     }
     [zoom >= 14] {
-      text-size: 14;
+      text-size: 16;
       text-fill: #777777;
     }
   }
@@ -103,7 +103,7 @@
 #placenames-small::suburb {
   [place = 'suburb'][zoom >= 12] {
     text-name: "[name]";
-    text-size: 10;
+    text-size: 11;
     text-fill: #000;
     text-face-name: @book-fonts;
     text-halo-radius: 1;
@@ -119,7 +119,7 @@
   [place = 'large_village'] {
     [zoom >=12] {
       text-name: "[name]";
-      text-size: 10;
+      text-size: 11;
       text-fill: #000;
       text-face-name: @book-fonts;
       text-halo-radius: 1;

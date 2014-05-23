@@ -71,6 +71,7 @@
 }
 
 #water-lines-casing {
+  line-opacity: 0.25;
   [waterway='stream'],
   [waterway='ditch'],
   [waterway='drain'] {
@@ -85,6 +86,7 @@
 }
 
 #water-lines-low-zoom {
+  line-opacity: 0.33;
   [waterway = 'river'][zoom >= 8][zoom < 12] {
     line-color: @water-color;
     line-width: 0.7;
@@ -94,6 +96,7 @@
 }
 
 #water-lines {
+  line-opacity: 0.33;
   [waterway = 'weir'][zoom >= 15] {
     line-color: #aaa;
     line-width: 2;
@@ -279,6 +282,7 @@
 }
 
 #waterway-bridges {
+  line-opacity: 0.33;
   [zoom >= 14] {
     line-width: 7;
     line-color: #000;
