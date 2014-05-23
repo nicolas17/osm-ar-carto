@@ -8,7 +8,7 @@
 #nepopulated {
   [SCALERANK = 1][zoom >= 3][zoom < 5] {
     text-name: "[NAME]";
-    text-size: 8;
+    text-size: 10;
     text-fill: grey;
     text-face-name: @book-fonts;
     text-halo-radius: 1;
@@ -31,5 +31,6 @@
 #builtup {
   [zoom >= 8][zoom < 11] {
     polygon-fill: #ddd;
+    polygon-opacity: 0.3;
   }
 }

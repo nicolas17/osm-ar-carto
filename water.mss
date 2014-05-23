@@ -1,4 +1,5 @@
 #water-areas {
+  line-opacity: 0.5;
   [natural = 'glacier']::natural {
     [zoom >= 6] {
       line-dasharray: 4,2;
@@ -16,6 +17,7 @@
   [waterway = 'canal'] {
     [zoom >= 9]::waterway {
       polygon-gamma: 0.75;
+      polygon-opacity: 0.5;
       polygon-fill: @water-color;
     }
   }
@@ -33,6 +35,7 @@
   [natural = 'bay']::natural {
     [zoom >= 6] {
       polygon-fill: @water-color;
+      polygon-opacity: 0.5;
       polygon-gamma: 0.75;
     }
   }
@@ -47,6 +50,7 @@
   [natural = 'wetland'] {
     [zoom >= 13] {
       polygon-pattern-file: url('symbols/marsh.png');
+      polygon-opacity: 0.5;
     }
   }
 }
@@ -165,9 +169,9 @@
       text-name: "[name]";
       text-face-name: @book-fonts;
       text-halo-radius: 1;
-      text-size: 8;
+      text-size: 10;
       text-placement: line;
-      text-fill: #6699cc;
+      text-fill: black;
     }
   }
 
@@ -186,7 +190,7 @@
     text-name: "[name]";
     text-size: 8;
     text-face-name: @book-fonts;
-    text-fill: #6699cc;
+    text-fill: black;
     text-halo-radius: 1;
     text-spacing: 600;
     text-placement: line;
@@ -206,7 +210,7 @@
       text-name: "[name]";
       text-face-name: @book-fonts;
       text-size: 8;
-      text-fill: #6699cc;
+      text-fill: black;
       text-spacing: 600;
       text-placement: line;
       text-halo-radius: 1;
@@ -226,7 +230,7 @@
     line-cap: round;
     text-name: "[name]";
     text-size: 9;
-    text-fill: #6699cc;
+    text-fill: black;
     text-placement: line;
     text-face-name: @book-fonts;
     text-halo-radius: 1;

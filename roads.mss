@@ -163,6 +163,7 @@
 }
 
 #highway-area-fill {
+  polygon-opacity: 0.5;
   [feature = 'highway_living_street'][zoom >= 14] {
     polygon-fill: #ccc;
   }
@@ -238,6 +239,7 @@
 
 
 #tunnels::casing {
+  line-opacity: 0.75;
   [highway = 'motorway'],
   [highway = 'motorway_link'] {
     [zoom >= 12] {
@@ -314,6 +316,7 @@
 }
 
 #tunnels::fill {
+  line-opacity: 0.75;
   [highway = 'motorway'],
   [highway = 'motorway_link'] {
     [zoom >= 12] {
@@ -396,6 +399,7 @@
 }
 
 #minor-roads-casing::links {
+  line-opacity: 0.75;
   [highway = 'raceway'] {
     [zoom >= 12] {
       line-color: pink;
@@ -465,6 +469,7 @@
 }
 
 #minor-roads-casing {
+  line-opacity: 0.75;
   [highway = 'motorway'][tunnel != 'yes'] {
     [zoom >= 12] {
       line-width: 3;
@@ -596,6 +601,7 @@
 }
 
 #minor-roads-fill::links {
+  line-opacity: 0.75;
   [feature = 'highway_motorway_link'][tunnel != 'yes'] {
     [zoom >= 12] {
       line-width: 0.5;
@@ -658,6 +664,7 @@
 }
 
 #minor-roads-fill {
+  line-opacity: 0.75;
 
   /*
    * The construction rules for small roads are strange, since if construction is null its assumed that
@@ -1384,6 +1391,7 @@
 }
 
 #tracks-tunnels {
+  line-opacity: 0.75;
   [zoom >= 14] {
     line-width: 4.5;
     line-color: grey;
@@ -1425,6 +1433,7 @@
 }
 
 .bridges {
+  line-opacity: 0.75;
   ::bridges_casing {
     [feature = 'highway_motorway'],
     [feature = 'highway_motorway_link'] {
@@ -1973,6 +1982,7 @@
 }
 
 #roads {
+  line-opacity: 0.75;
   [feature = 'highway_motorway'],
   [feature = 'highway_motorway_link'] {
     [zoom >= 5][zoom < 12] {
