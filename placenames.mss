@@ -12,7 +12,7 @@
 .country {
   [place = 'country'][zoom >= 2][zoom < 6] {
     text-name: "[name]";
-    text-size: 8;
+    text-size: 14;
     text-fill: #9d6c9d;
     text-face-name: @book-fonts;
     text-halo-radius: 1;
@@ -26,7 +26,7 @@
 .state {
   [place = 'state'][zoom >= 4][zoom < 9] {
     text-name: "[ref]";
-    text-size: 8;
+    text-size: 12;
     text-fill: #9d6c9d;
     text-face-name: @oblique-fonts;
     text-halo-radius: 1;
@@ -43,7 +43,7 @@
 #placenames-capital {
   [zoom >= 5][zoom < 15] {
     text-name: "[name]";
-    text-size: 9;
+    text-size: 13;
     text-fill: #000;
     text-face-name: @book-fonts;
     text-halo-radius: 1;
@@ -61,7 +61,7 @@
   [place = 'metropolis'] {
     [zoom >= 6][zoom < 15] {
       text-name: "[name]";
-      text-size: 8;
+      text-size: 11;
       text-fill: #000;
       text-face-name: @book-fonts;
       text-halo-radius: 1;

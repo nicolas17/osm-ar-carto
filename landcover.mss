@@ -1,6 +1,7 @@
 #landcover {
  [feature = 'leisure_swimming_pool'][zoom >= 14] {
     polygon-fill: @water-color;
+    polygon-opacity: 0.3;
     line-color: blue;
     line-width: 0.5;
   }
