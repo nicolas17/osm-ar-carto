@@ -1,5 +1,7 @@
 #water-areas {
   line-opacity: 0.5;
+  polygon-gamma: 0.75;
+  polygon-opacity: 0.5;
   [natural = 'glacier']::natural {
     [zoom >= 6] {
       line-dasharray: 4,2;

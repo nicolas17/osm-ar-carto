@@ -973,11 +973,11 @@
       line-opacity: 0.4;
       line-cap: round;
       line-join: round;
-      b/line-width: 0.5;
+      /*b/line-width: 0.5;
       b/line-dasharray: 6,3;
       b/line-color: black;
       b/line-join: round;
-      b/line-cap: round;
+      b/line-cap: round;*/
     }
   }
 
@@ -1342,11 +1342,11 @@
     b/line-opacity: 0.4;
     b/line-join: round;
     b/line-cap: round;
-    c/line-width: 0.5;
+    /*c/line-width: 0.5;
     c/line-color: black;
     c/line-dasharray: 6,3;
     c/line-cap: round;
-    c/line-join: round;
+    c/line-join: round;*/
   }
 }
 
@@ -1982,7 +1982,7 @@
 }
 
 #roads {
-  line-opacity: 0.75;
+  line-width: 0:
   [feature = 'highway_motorway'],
   [feature = 'highway_motorway_link'] {
     [zoom >= 5][zoom < 12] {
