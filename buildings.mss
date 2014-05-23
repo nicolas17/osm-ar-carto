@@ -8,11 +8,11 @@
 
     [building = 'supermarket'] {
       polygon-fill: pink;
-      polygon-opacity: 0.5;
+      polygon-opacity: 0.1;
     }
 
     [amenity = 'place_of_worship']::amenity {
-      polygon-opacity: 0.5;
+      polygon-opacity: 0.1;
       polygon-fill: #777;
       [zoom >= 15] {
         polygon-opacity: 0.9;
@@ -27,7 +27,7 @@
 #buildings {
   [building = 'INT-light'][zoom >= 12] {
     polygon-fill: #bca9a9;
-    polygon-opacity: 0.2;
+    polygon-opacity: 0.1;
     polygon-clip: false;
   }
   [building != 'INT-light'][building != ''][zoom >= 12] {
@@ -40,6 +40,7 @@
     }
   }
   [aeroway = 'terminal'][zoom >= 12]::aeroway {
+    polygon-opacity: 0.2;
     polygon-fill: #cc99ff;
     polygon-clip: false;
     [zoom >= 14] {

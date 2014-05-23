@@ -1,7 +1,6 @@
 #landcover {
  [feature = 'leisure_swimming_pool'][zoom >= 14] {
     polygon-fill: @water-color;
-    polygon-opacity: 0.3;
     line-color: blue;
     line-width: 0.5;
   }
@@ -51,6 +50,7 @@
   [feature = 'amenity_grave_yard'] {
     [zoom >= 10][zoom < 14] {
       polygon-fill: #aacbaf;
+      polygon-opacity: 0.1;
     }
     [zoom >= 14] {
       [religion = 'jewish'] { polygon-pattern-file: url('symbols/cemetery_jewish.18.png'); }
@@ -99,6 +99,7 @@
   [feature = 'landuse_grass'] {
     [zoom >= 10] {
       polygon-fill: #cfeca8;
+      polygon-opacity: 0.2;
     }
   }
 
@@ -106,7 +107,7 @@
   [feature = 'leisure_recreation_ground'] {
     [zoom >= 10] {
       polygon-fill: #b6fdb6;
-      polygon-opacity: 0.6;
+      polygon-opacity: 0.2;
     }
   }
 
@@ -116,14 +117,17 @@
 
   [feature = 'leisure_common'][zoom >= 10] {
     polygon-fill: #cfeca8;
+      polygon-opacity: 0.2;
   }
 
   [feature = 'leisure_garden'][zoom >= 10] {
     polygon-fill: #cfeca8;
+      polygon-opacity: 0.2;
   }
 
   [feature = 'leisure_golf_course'][zoom >= 10] {
     polygon-fill: #b5e3b5;
+      polygon-opacity: 0.2;
   }
 
   [feature = 'landuse_allotments'] {
@@ -136,6 +140,7 @@
   }
 
   [feature = 'landuse_forest'] {
+    polygon-opacity: 0.2;
     [zoom >= 8][zoom < 14] {
       polygon-fill: #8dc56c;
     }
@@ -150,6 +155,7 @@
 
   [feature = 'landuse_farm'],
   [feature = 'landuse_farmland'] {
+    polygon-opacity: 0.2;
     [zoom >= 9] {
       polygon-fill: #ead8bd;
     }
@@ -157,6 +163,7 @@
 
   [feature = 'landuse_recreation_ground'],
   [feature = 'landuse_conservation'] {
+    polygon-opacity: 0.2;
     [zoom >= 10] {
       polygon-fill: #cfeca8;
     }
@@ -177,6 +184,7 @@
   [feature = 'landuse_industrial'],
   [feature = 'landuse_railway'] {
     [zoom >= 10] {
+      polygon-opacity: 0.2;
       polygon-fill: #dfd1d6;
     }
   }
@@ -199,6 +207,7 @@
   }
 
   [feature = 'landuse_commercial'][zoom >= 10] {
+    polygon-opacity: 0.2;
     polygon-fill: #efc8c8;
   }
 
@@ -208,7 +217,7 @@
   [feature = 'landuse_construction'] {
     [zoom >= 10] {
       polygon-fill: #9d9d6c;
-      polygon-opacity: 0.7;
+      polygon-opacity: 0.3;
     }
   }
 
@@ -216,6 +225,7 @@
   [feature = 'landuse_wood'] {
     [zoom >= 8] {
       polygon-fill: #aed1a0;
+      polygon-opacity: 0.2;
     }
   }
 
@@ -225,6 +235,7 @@
 
   [feature = 'natural_sand'][zoom >= 10] {
     polygon-fill: #ffdf88;
+    polygon-opacity: 0.2;
   }
 
   [feature = 'natural_heath'][zoom >= 10] {
@@ -232,10 +243,12 @@
   }
 
   [feature = 'natural_grassland'][zoom >= 10] {
+    polygon-opacity: 0.2;
     polygon-fill: #c6e4b4;
   }
 
   [feature = 'natural_scrub'] {
+    polygon-opacity: 0.2;
     [zoom >= 10][zoom < 14] {
       polygon-fill: #b5e3b5;
     }
@@ -260,6 +273,7 @@
 
   [feature = 'amenity_parking'][zoom >= 10] {
     polygon-fill: #f7efb7;
+    polygon-opacity: 0.5;
     [zoom >= 15] {
       line-width: 0.3;
       line-color: #eeeed1;
@@ -305,6 +319,7 @@
 #sports-grounds {
   [leisure = 'sports_centre'],
   [leisure = 'stadium'] {
+    polygon-opacity: 0.2;
     [zoom >= 10] {
       polygon-fill: #33cc99;
     }
@@ -318,6 +333,7 @@
 
   [leisure = 'pitch'][zoom >= 10] {
     polygon-fill: #8ad3af;
+    polygon-opacity: 0.3;
     line-width: 0.5;
     line-color: #888;
   }
@@ -333,6 +349,7 @@
   }
   [leisure = 'nature_reserve'][zoom >= 10] {
     polygon-pattern-file: url('symbols/nature_reserve5.png');
+    polygon-opacity: 0.3;
     line-color: #6c3;
     line-width: 0.5;
     [zoom >= 14] {

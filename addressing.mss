@@ -6,7 +6,7 @@
     text-wrap-width: 0;
     text-face-name: @book-fonts;
     text-fill: #444;
-    text-size: 9;
+    text-size: 11;
   }
 }
 
@@ -16,10 +16,10 @@
     text-placement: interior;
     text-wrap-width: 20;
     text-face-name: @book-fonts;
-    text-size: 8;
+    text-size: 10;
     text-fill: #444;
     [zoom >= 18] {
-      text-size: 9;
+      text-size: 11;
     }
   }
 }

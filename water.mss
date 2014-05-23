@@ -15,13 +15,13 @@
   [waterway = 'mill_pond'],
   [waterway = 'canal'] {
     [zoom >= 9]::waterway {
-      polygon-gamma: 0.95;
+      polygon-gamma: 0.75;
       polygon-fill: @water-color;
     }
   }
 
   [landuse = 'basin'][zoom >= 7]::landuse {
-    polygon-gamma: 0.5;
+    polygon-gamma: 0.75;
     polygon-fill: @water-color;
   }
 
