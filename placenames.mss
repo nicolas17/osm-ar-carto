@@ -24,6 +24,7 @@
 }
 
 .state {
+  text-name: "[name]";
   [place = 'state'][zoom >= 4][zoom < 9] {
     text-name: "[ref]";
     text-size: 19;
