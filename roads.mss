@@ -1982,7 +1982,7 @@
 }
 
 #roads {
-  line-width: 0:
+  line-color: transparent;
   [feature = 'highway_motorway'],
   [feature = 'highway_motorway_link'] {
     [zoom >= 5][zoom < 12] {
