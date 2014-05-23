@@ -1,8 +1,8 @@
 /* For the main linear features, such as roads and railways. */
 
 line-color: transparent;
-@motorway-fill: #804677;
-@trunk-fill: magenta;
+@motorway-fill: magenta;
+@trunk-fill: #804677;
 @primary-fill: #5c2e6d;
 @secondary-fill: #832e6d;
 @tertiary-fill: purple;
@@ -669,7 +669,7 @@ line-color: transparent;
 
 #minor-roads-fill {
   line-opacity: 0.65;
-  line-opacity: 0.75;
+  line-color: transparent;
   /*
    * The construction rules for small roads are strange, since if construction is null its assumed that
    * it's a more major road. The line-width = 0 could be removed by playing with the query to set a construction
