@@ -1,13 +1,13 @@
 /* For the main linear features, such as roads and railways. */
 
-@motorway-fill: #809bc0;
-@trunk-fill: #a9dba9;
-@primary-fill: #ec989a;
+@motorway-fill: #804677;
+@trunk-fill: #9d8450;
+@primary-fill: #5c2e6d;
 @secondary-fill: #fed7a5;
 @tertiary-fill: #ffffb3;
-@residential-fill: #ffffff;
+@residential-fill: #dedede;
 @residential-thin: #999;
-@service-fill: #ffffff;
+@service-fill: #ddd;
 @living-street-fill: #ccc;
 @pedestrian-fill: #ededed;
 @road-fill: #ddd;
