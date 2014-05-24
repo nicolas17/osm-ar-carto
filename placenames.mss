@@ -18,7 +18,7 @@
     text-halo-radius: 4;
     text-wrap-width: 20;
     [zoom >= 4] {
-      text-size: 11;
+      text-size: 21;
     }
   }
 }

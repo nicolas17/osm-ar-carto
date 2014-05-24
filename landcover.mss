@@ -141,17 +141,19 @@
   }
 
   [feature = 'landuse_forest'] {
-    polygon-opacity: 0.2;
     [zoom >= 8][zoom < 14] {
       polygon-fill: #8dc56c;
+      polygon-opacity: 0.2;
     }
     [zoom >= 14] {
       polygon-pattern-file: url('symbols/forest.png');
+      polygon-opacity: 0.2;
     }
   }
 
   [feature = 'landuse_farmyard'][zoom >= 9] {
     polygon-fill: #ddbf92;
+    polygon-opacity: 0.33;
   }
 
   [feature = 'landuse_farm'],

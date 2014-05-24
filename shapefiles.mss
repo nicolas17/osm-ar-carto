@@ -8,10 +8,10 @@
 #nepopulated {
   [SCALERANK = 1][zoom >= 3][zoom < 5] {
     text-name: "[NAME]";
-    text-size: 10;
+    text-size: 18;
     text-fill: grey;
     text-face-name: @book-fonts;
-    text-halo-radius: 1;
+    text-halo-radius: 4;
     text-dy: 2;
   }
 }
