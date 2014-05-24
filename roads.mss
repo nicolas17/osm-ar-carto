@@ -2304,6 +2304,7 @@ line-color: transparent;
     }
   }
   [highway = 'secondary'] {
+    text-name: "[name]";
     [zoom >= 18] {
       text-name: "[name]";
       text-size: 11;
