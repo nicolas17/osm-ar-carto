@@ -164,7 +164,7 @@ line-color: transparent;
 }
 
 #highway-area-fill {
-  polygon-opacity: 0.25;
+  polygon-opacity: 0.5;
   [feature = 'highway_living_street'][zoom >= 14] {
     polygon-fill: #ccc;
   }
@@ -471,7 +471,7 @@ line-color: transparent;
 }
 
 #minor-roads-casing {
-  line-opacity: 0.35;
+  line-opacity: 0.75;
   line-color: transparent;
   [highway = 'motorway'][tunnel != 'yes'] {
     [zoom >= 12] {
@@ -604,7 +604,7 @@ line-color: transparent;
 }
 
 #minor-roads-fill::links {
-  line-opacity: 0.5;
+  line-opacity: 0.75;
   line-color: transparent;
   [feature = 'highway_motorway_link'][tunnel != 'yes'] {
     [zoom >= 12] {
@@ -668,7 +668,7 @@ line-color: transparent;
 }
 
 #minor-roads-fill {
-  line-opacity: 0.45;
+  line-opacity: 0.65;
   line-color: transparent;
   /*
    * The construction rules for small roads are strange, since if construction is null its assumed that
@@ -811,7 +811,7 @@ line-color: transparent;
   [feature = 'highway_road'] {
     [zoom >= 1][zoom < 10] {
       line-width: 0.5;
-      line-opacity: 0.15;
+      line-opacity: 0.1;
       line-color: @residential-thin;
     }
     [zoom >= 10][zoom < 13] {
@@ -821,7 +821,7 @@ line-color: transparent;
   }
 
   [feature = 'highway_road'][zoom >= 1]{
-      line-opacity:0.15;
+      line-opacity:0.05;
     }
     [zoom >= 13] {
     line-width: 2;
@@ -1333,7 +1333,7 @@ line-color: transparent;
       b/line-join: round;
       b/line-cap: round;
       c/line-width: 2;
-      c/line-color: cyan;
+      c/line-color: blue;
       c/line-opacity: 0.5;
       c/line-dasharray: 1,3;
       c/line-join: round;
@@ -1735,7 +1735,6 @@ line-color: transparent;
   }
 
   ::bridges_fill {
-    line-opacity: 0.5;
     [feature = 'highway_motorway'],
     [feature = 'highway_motorway_link'] {
       [zoom >= 12] {
@@ -1996,7 +1995,6 @@ line-color: transparent;
 
 #roads {
   line-color: transparent;
-  line-opacity: 0.33;
   [feature = 'highway_motorway'],
   [feature = 'highway_motorway_link'] {
     [zoom >= 5][zoom < 12] {
@@ -2209,7 +2207,7 @@ line-color: transparent;
 
   [highway = 'trunk'][zoom >= 13] {
     shield-name: "[ref]";
-    shield-size: 16;
+    shield-size: 10;
     shield-fill: #fff;
     shield-placement: line;
     shield-file: url("symbols/tru_shield[length].png");
@@ -2315,11 +2313,9 @@ line-color: transparent;
       text-halo-radius: 2;
     }
     [zoom >= 14] {
-      text-name: "[name]";
       text-size: 18;
     }
     [zoom >= 15] {
-      text-name: "[name]";
       text-size: 20;
     }
   }
