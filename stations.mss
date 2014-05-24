@@ -14,7 +14,7 @@
       text-name: "[name]";
       text-face-name: @bold-fonts;
       text-size: 9;
-      text-fill: #66f;
+      text-fill: #09051d;
       text-dy: -8;
       text-halo-radius: 1;
       text-wrap-width: 0;
@@ -46,7 +46,7 @@
       text-name: "[name]";
       text-face-name: @book-fonts;
       text-size: 8;
-      text-fill: #66f;
+      text-fill: #09051d;
       text-dy: -8;
       text-halo-radius: 1;
       text-wrap-width: 0;
