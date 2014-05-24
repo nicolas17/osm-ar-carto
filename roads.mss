@@ -668,7 +668,7 @@ line-color: transparent;
 }
 
 #minor-roads-fill {
-  line-opacity: 0.35;
+  line-opacity: 0.05;
   line-color: transparent;
   /*
    * The construction rules for small roads are strange, since if construction is null its assumed that
@@ -756,6 +756,7 @@ line-color: transparent;
   }
 
   [feature = 'highway_motorway'][tunnel != 'yes'] {
+    line-opacity: 0.5;
     [zoom >= 12] {
       line-width: 2;
       line-color: @motorway-fill;
@@ -794,6 +795,7 @@ line-color: transparent;
   }
 
   [feature = 'highway_secondary'][tunnel != 'yes'] {
+    line-opacity: 0.05;
     [zoom >= 12] {
       line-width: 2;
       line-color: @secondary-fill;
@@ -809,6 +811,7 @@ line-color: transparent;
   [feature = 'highway_residential'],
   [feature = 'highway_unclassified'],
   [feature = 'highway_road'] {
+    line-opacity: 0.5;
     [zoom >= 1][zoom < 10] {
       line-width: 0.5;
       line-opacity: 0.1;
@@ -824,6 +827,7 @@ line-color: transparent;
       line-opacity:0.05;
     }
     [zoom >= 13] {
+    line-opacity: 0.05;
     line-width: 2;
     line-color: @road-fill;
     line-join: round;
@@ -839,6 +843,7 @@ line-color: transparent;
     [zoom >= 13][tunnel != 'yes'] {
       line-width: 2;
       line-color: @residential-fill;
+      line-opacity: 0.5;
       line-cap: round;
       line-join: round;
       [zoom >= 14] { line-width: 3; }
