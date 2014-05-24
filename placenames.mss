@@ -24,9 +24,8 @@
 }
 
 .state {
-  text-name: "[name]";
   [place = 'state'][zoom >= 4][zoom < 9] {
-    text-name: "[ref]";
+    text-name: "[name]";
     text-size: 19;
     text-fill: #000;
     text-face-name: @oblique-fonts;
