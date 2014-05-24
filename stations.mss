@@ -13,7 +13,7 @@
     [zoom >= 14] {
       text-name: "[name]";
       text-face-name: @bold-fonts;
-      text-size: 9;
+      text-size: 19;
       text-fill: #09051d;
       text-dy: -8;
       text-halo-radius: 1;
@@ -44,8 +44,8 @@
     }
     [zoom >= 14] {
       text-name: "[name]";
-      text-face-name: @book-fonts;
-      text-size: 8;
+      text-face-name: @bold-fonts;
+      text-size: 18;
       text-fill: #09051d;
       text-dy: -8;
       text-halo-radius: 1;

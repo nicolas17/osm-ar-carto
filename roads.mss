@@ -213,7 +213,7 @@ line-color: transparent;
 #highway-junctions {
   [zoom >= 11] {
     ref/text-name: "[ref]";
-    ref/text-size: 12;
+    ref/text-size: 16;
     ref/text-fill: #6666ff;
     ref/text-min-distance: 2;
     ref/text-face-name: @oblique-fonts;
@@ -221,7 +221,7 @@ line-color: transparent;
     ref/text-wrap-width: 12;
     [zoom >= 12] {
       name/text-name: "[name]";
-      name/text-size: 11;
+      name/text-size: 15;
       name/text-fill: #6666ff;
       name/text-dy: -8;
       name/text-face-name: @oblique-fonts;
@@ -231,8 +231,8 @@ line-color: transparent;
       name/text-min-distance: 2;
     }
     [zoom >= 15] {
-      ref/text-size: 15;
-      name/text-size: 14;
+      ref/text-size: 19;
+      name/text-size: 18;
       name/text-dy: -10;
     }
   }
@@ -240,7 +240,7 @@ line-color: transparent;
 
 
 #tunnels::casing {
-  line-opacity: 0.75;
+  line-opacity: 0.55;
   [highway = 'motorway'],
   [highway = 'motorway_link'] {
     [zoom >= 12] {
@@ -317,7 +317,7 @@ line-color: transparent;
 }
 
 #tunnels::fill {
-  line-opacity: 0.75;
+  line-opacity: 0.55;
   [highway = 'motorway'],
   [highway = 'motorway_link'] {
     [zoom >= 12] {
@@ -400,7 +400,7 @@ line-color: transparent;
 }
 
 #minor-roads-casing::links {
-  line-opacity: 0.75;
+  line-opacity: 0.55;
   line-color: transparent;
   [highway = 'raceway'] {
     [zoom >= 12] {
@@ -471,7 +471,7 @@ line-color: transparent;
 }
 
 #minor-roads-casing {
-  line-opacity: 0.75;
+  line-opacity: 0.55;
   line-color: transparent;
   [highway = 'motorway'][tunnel != 'yes'] {
     [zoom >= 12] {
@@ -604,7 +604,7 @@ line-color: transparent;
 }
 
 #minor-roads-fill::links {
-  line-opacity: 0.75;
+  line-opacity: 0.55;
   line-color: transparent;
   [feature = 'highway_motorway_link'][tunnel != 'yes'] {
     [zoom >= 12] {
@@ -1403,7 +1403,7 @@ line-color: transparent;
 }
 
 #tracks-tunnels {
-  line-opacity: 0.75;
+  line-opacity: 0.55;
   [zoom >= 14] {
     line-width: 4.5;
     line-color: grey;
@@ -2254,7 +2254,7 @@ line-color: transparent;
     line-color: transparent;
     [zoom >= 15][bridge = 'no'] {
       text-name: "[ref]";
-      text-size: 13;
+      text-size: 17;
       text-fill: #000;
       text-face-name: @bold-fonts;
       text-min-distance: 18;
@@ -2268,7 +2268,7 @@ line-color: transparent;
   [highway = 'taxiway'] {
     [zoom >= 15][bridge = 'no'] {
       text-name: "[ref]";
-      text-size: 13;
+      text-size: 17;
       text-fill: #333;
       text-spacing: 750;
       text-clip: false;
@@ -2288,11 +2288,11 @@ line-color: transparent;
       text-name: "[name]";
       text-size: 19;
       text-fill: black;
-      text-spacing: 300;
+      text-spacing: 800;
       text-clip: false;
       text-placement: line;
-      text-face-name: @book-fonts;
-      text-halo-radius: 0;
+      text-face-name: @bold-fonts;
+      text-halo-radius: 2;
     }
     [zoom >= 14] {
       text-size: 19;
@@ -2304,80 +2304,80 @@ line-color: transparent;
   [highway = 'secondary'] {
     [zoom >= 13] {
       text-name: "[name]";
-      text-size: 11;
+      text-size: 17;
       text-fill: black;
-      text-spacing: 300;
+      text-spacing: 500;
       text-clip: false;
       text-placement: line;
       text-face-name: @book-fonts;
-      text-halo-radius: 0;
+      text-halo-radius: 2;
     }
     [zoom >= 14] {
-      text-size: 12;
+      text-size: 16;
     }
     [zoom >= 15] {
-      text-size: 13;
+      text-size: 17;
     }
   }
   [highway = 'tertiary'] {
     [zoom >= 15] {
       text-name: "[name]";
-      text-size: 12;
+      text-size: 16;
       text-fill: #000;
-      text-spacing: 300;
+      text-spacing: 600;
       text-clip: false;
       text-placement: line;
       text-face-name: @book-fonts;
-      text-halo-radius: 0;
+      text-halo-radius: 2;
     }
     [zoom >= 17] {
-      text-size: 14;
+      text-size: 18;
     }
   }
   [highway = 'proposed'],
   [highway = 'construction'] {
     [zoom >= 13] {
       text-name: "[name]";
-      text-size: 12;
+      text-size: 16;
       text-fill: #000;
       text-placement: line;
       text-face-name: @book-fonts;
       text-halo-radius: 1;
     }
     [zoom >= 16] {
-      text-size: 14;
+      text-size: 18;
     }
   }
   [highway = 'residential'],
   [highway = 'unclassified'] {
     [zoom >= 15] {
       text-name: "[name]";
-      text-size: 11;
+      text-size: 15;
       text-spacing: 300;
       text-clip: false;
       text-placement: line;
       text-halo-radius: 1;
-      text-face-name: @book-fonts;
+      text-face-name: @bold-fonts;
     }
     [zoom >= 16] {
-      text-size: 12;
+      text-size: 16;
     }
     [zoom >= 17] {
-      text-size: 14;
-      text-spacing: 400;
+      text-size: 18;
+      text-spacing: 900;
     }
   }
   /* Other things, not just roads */
   [zoom >= 15] {
     text-name: "[name]";
-    text-size: 12;
+    text-size: 16;
     text-fill: #000;
     text-placement: line;
-    text-face-name: @book-fonts;
+    text-face-name: @bold-fonts;
     text-halo-radius: 1;
   }
   [zoom >= 17] {
-      text-size: 14;
+      text-size: 18;
   }
 }
 
