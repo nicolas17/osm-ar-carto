@@ -4,7 +4,7 @@ line-color: transparent;
 @motorway-fill: magenta;
 @trunk-fill: #804677;
 @primary-fill: #5c2e6d;
-@secondary-fill: #832e6d;
+@secondary-fill: #8e4d84;
 @tertiary-fill: purple;
 @residential-fill: #dedede;
 @residential-thin: #999;
@@ -13,11 +13,11 @@ line-color: transparent;
 @pedestrian-fill: #ededed;
 @road-fill: #ddd;
 
-@motorway-casing: #506077;
+@motorway-casing: #a32e6d;
 @trunk-casing: #477147;
-@primary-casing: #8d4346;
-@secondary-casing: #a37b48;
-@tertiary-casing: #bbb;
+@primary-casing: purple;
+@secondary-casing: magenta;
+@tertiary-casing: purple;
 @residential-casing: #bbb;
 @service-casing: #999;
 @living-street-casing: #ffffff;
@@ -164,7 +164,7 @@ line-color: transparent;
 }
 
 #highway-area-fill {
-  polygon-opacity: 0.5;
+  polygon-opacity: 0.3;
   [feature = 'highway_living_street'][zoom >= 14] {
     polygon-fill: #ccc;
   }
@@ -1221,7 +1221,7 @@ line-color: transparent;
         line-dasharray: 6,8;
         line-cap: round;
         line-join: round;
-        line-opacity: 0.5;
+        line-opacity: 0.4;
       }
     }
     [highway = 'service'][service = 'INT-normal'][zoom >= 15],
@@ -1231,7 +1231,7 @@ line-color: transparent;
       line-dasharray: 6,8;
       line-cap: round;
       line-join: round;
-      line-opacity: 0.5;
+      line-opacity: 0.3;
       [zoom >= 16] { line-width: 6; }
     }
   }
@@ -1244,7 +1244,7 @@ line-color: transparent;
         line-dasharray: 6,8;
         line-cap: round;
         line-join: round;
-        line-opacity: 0.5;
+        line-opacity: 0.33;
       }
     }
     [highway = 'service'][service = 'INT-normal'][zoom >= 15],
@@ -1254,7 +1254,7 @@ line-color: transparent;
       line-dasharray: 6,8;
       line-cap: round;
       line-join: round;
-      line-opacity: 0.5;
+      line-opacity: 0.33;
       [zoom >= 16] { line-width: 6; }
     }
   }
@@ -1265,7 +1265,7 @@ line-color: transparent;
         line-width: 6;
         line-color: #efa9a9;
         line-dasharray: 6,8;
-        line-opacity: 0.5;
+        line-opacity: 0.33;
         line-join: round;
         line-cap: round;
       }
@@ -1275,7 +1275,7 @@ line-color: transparent;
       line-width: 3;
       line-color: #efa9a9;
       line-dasharray: 6,8;
-      line-opacity: 0.5;
+      line-opacity: 0.33;
       line-join: round;
       line-cap: round;
       [zoom >= 16] { line-width: 6; }
@@ -1378,26 +1378,26 @@ line-color: transparent;
       line-width: 3.5;
       b/line-width: 2;
       b/line-color: #b37700;
-      b/line-opacity: 0.7;
+      b/line-opacity: 0.3;
       b/line-dasharray: 100,0; /* i.e. none, see https://github.com/mapbox/carto/issues/214 */
     }
     [tracktype = 'grade2'] {
       b/line-color: #a87000;
       b/line-dasharray: 9,4;
-      b/line-opacity: 0.8;
+      b/line-opacity: 0.3;
     }
     [tracktype = 'grade3'] {
-      b/line-opacity: 0.8;
+      b/line-opacity: 0.3;
     }
     [tracktype = 'grade4'] {
       b/line-width: 2;
       b/line-dasharray: 4,7,1,5;
-      b/line-opacity: 0.8;
+      b/line-opacity: 0.3;
     }
     [tracktype = 'grade5'] {
       b/line-width: 2;
       b/line-dasharray: 1,5;
-      b/line-opacity: 0.8;
+      b/line-opacity: 0.3;
     }
   }
 }
@@ -1910,26 +1910,26 @@ line-color: transparent;
         line-width: 2;
         line-color: #b37700;
         line-dasharray: 100,0; /* i.e. none */
-        line-opacity: 0.7;
+        line-opacity: 0.3;
       }
       [tracktype = 'grade2'] {
         line-color: #a87000;
-        line-opacity: 0.8;
+        line-opacity: 0.3;
       }
       [tracktype = 'grade3'] {
         line-width: 2;
-        line-opacity: 0.7;
+        line-opacity: 0.3;
         line-dasharray: 100,0; /* strange but true */
       }
       [tracktype = 'grade4'] {
         line-width: 2;
         line-dasharray: 4,7,1,5;
-        line-opacity: 0.8;
+        line-opacity: 0.3;
       }
       [tracktype = 'grade5'] {
         line-width: 2;
         line-dasharray: 1,5;
-        line-opacity: 0.8;
+        line-opacity: 0.3;
       }
     }
 
