@@ -2302,7 +2302,7 @@ line-color: transparent;
     }
   }
   [highway = 'secondary'] {
-    [zoom >= 18] {
+    [zoom >= 13] {
       text-name: "[name]";
       text-size: 11;
       text-fill: black;
@@ -2313,16 +2313,16 @@ line-color: transparent;
       text-halo-radius: 0;
     }
     [zoom >= 14] {
-      text-size: 18;
+      text-size: 12;
     }
     [zoom >= 15] {
-      text-size: 20;
+      text-size: 13;
     }
   }
   [highway = 'tertiary'] {
     [zoom >= 15] {
       text-name: "[name]";
-      text-size: 18;
+      text-size: 12;
       text-fill: #000;
       text-spacing: 300;
       text-clip: false;
