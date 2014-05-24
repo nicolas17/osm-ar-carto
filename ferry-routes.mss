@@ -5,7 +5,7 @@
     line-dasharray: 4,4;
     [zoom >= 11] {
       line-width: 1.8;
-      line-opacity: 0.33:
+      line-opacity: 0.33;
       line-dasharray: 6,6;
     }
   }
