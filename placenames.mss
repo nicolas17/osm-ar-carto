@@ -81,17 +81,17 @@
   [place = 'small_town'] {
     [zoom >= 9] {
       text-name: "[name]";
-      text-size: 12;
+      text-size: 15;
       text-fill: #000;
-      text-face-name: @book-fonts;
-      text-halo-radius: 1;
+      text-face-name: @bold-fonts;
+      text-halo-radius: 2;
       text-wrap-width: 20;
     }
     [zoom >= 11] {
-      text-size: 13;
+      text-size: 15;
     }
     [zoom >= 12] {
-      text-size: 14;
+      text-size: 15;
     }
     [zoom >= 14] {
       text-size: 16;
@@ -105,7 +105,7 @@
     text-name: "[name]";
     text-size: 15;
     text-fill: #000;
-    text-face-name: @book-fonts;
+    text-face-name: @bold-fonts;
     text-halo-radius: 1;
     [zoom >= 14] {
       text-size: 17;
@@ -121,10 +121,10 @@
       text-name: "[name]";
       text-size: 15;
       text-fill: #000;
-      text-face-name: @book-fonts;
+      text-face-name: @bold-fonts;
       text-halo-radius: 1;
       [zoom >= 15] {
-        text-size: 17;
+        text-size: 16;
         text-fill: #444;
       }
     }
@@ -144,7 +144,7 @@
       text-halo-radius: 1;
     }
     [zoom >= 16] {
-      text-size: 17;
+      text-size: 16;
       text-fill: #444;
     }
   }
