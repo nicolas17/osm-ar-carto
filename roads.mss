@@ -668,7 +668,7 @@ line-color: transparent;
 }
 
 #minor-roads-fill {
-  line-opacity: 0.65;
+  line-opacity: 0.35;
   line-color: transparent;
   /*
    * The construction rules for small roads are strange, since if construction is null its assumed that
@@ -1445,8 +1445,8 @@ line-color: transparent;
 }
 
 .bridges {
-  line-opacity: 0.5;
   ::bridges_casing {
+  line-opacity: 0.5;
     [feature = 'highway_motorway'],
     [feature = 'highway_motorway_link'] {
       [zoom >= 12] {
@@ -1634,6 +1634,7 @@ line-color: transparent;
   }
 
   ::bridges-casing2 {
+    line-opacity: 0.5;
     [feature = 'highway_unsurfaced'][zoom >= 13] {
       line-width: 4;
       line-color: white;
