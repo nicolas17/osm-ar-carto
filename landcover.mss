@@ -219,16 +219,16 @@
   [feature = 'landuse_greenfield'],
   [feature = 'landuse_construction'] {
     [zoom >= 10] {
-      polygon-fill: #9d9d6c;
-      polygon-opacity: 0.3;
+      polygon-fill: #393b25;
+      polygon-opacity: 0.18;
     }
   }
 
   [feature = 'natural_wood'],
   [feature = 'landuse_wood'] {
-    [zoom >= 8] {
-      polygon-fill: #aed1a0;
-      polygon-opacity: 0.2;
+    [zoom >= 9] {
+      polygon-fill: #1f6e13;
+      polygon-opacity: 0.28;
     }
   }
 
@@ -354,13 +354,14 @@
   }
   [leisure = 'nature_reserve'][zoom >= 10] {
     polygon-opacity: 0.2;
-    polygon-pattern-file: url('symbols/nature_reserve5.png');
-    line-color: #6c3;
-    line-width: 0.5;
+    polygon-fill: #367b2c;
+    line-color: #367b2c;
+    line-opacity:0.33;
+    line-width: 5;
     [zoom >= 14] {
       polygon-opacity: 0.2;
-      polygon-pattern-file: url('symbols/nature_reserve6.png');
-      line-width: 1;
+      polygon-fill: #367b2c;
+      line-width: 6;
     }
   }
 }
