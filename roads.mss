@@ -2,8 +2,8 @@
 
 line-color: transparent;
 @motorway-fill: magenta;
-@trunk-fill: #804677;
-@primary-fill: #5c2e6d;
+@trunk-fill: purple;
+@primary-fill: #861bae;
 @secondary-fill: #8e4d84;
 @tertiary-fill: purple;
 @residential-fill: #dedede;
@@ -404,7 +404,7 @@ line-color: transparent;
   line-color: transparent;
   [highway = 'raceway'] {
     [zoom >= 12] {
-      line-color: pink;
+      line-color: @motorway-casing;
       line-width: 1.2;
       line-join: round;
     }
