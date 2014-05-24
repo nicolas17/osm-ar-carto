@@ -2218,7 +2218,7 @@ line-color: transparent;
 
   [highway = 'primary'][zoom >= 13] {
     shield-name: "[ref]";
-    shield-size: 16;
+    shield-size: 10;
     shield-fill: #fff;
     shield-placement: line;
     shield-file: url("symbols/pri_shield[length].png");
@@ -2240,12 +2240,12 @@ line-color: transparent;
 
   [highway = 'tertiary'][bridge = 'no'][zoom >= 13] {
     shield-name: "[ref]";
-    shield-size: 16;
+    shield-size: 10;
     shield-fill: #fff;
     shield-placement: line;
     shield-file: url("symbols/ter_shield[length].png");
-    shield-spacing: 1250;
-    shield-min-distance: 90;
+    shield-spacing: 750;
+    shield-min-distance: 30;
     shield-face-name: @bold-fonts;
   }
 
@@ -2254,10 +2254,10 @@ line-color: transparent;
     line-color: transparent;
     [zoom >= 15][bridge = 'no'] {
       text-name: "[ref]";
-      text-size: 14;
+      text-size: 13;
       text-fill: #000;
-      text-face-name: @book-fonts;
-      text-min-distance: 48;
+      text-face-name: @bold-fonts;
+      text-min-distance: 18;
       text-halo-radius: 1;
       text-spacing: 750;
       text-clip: false;
@@ -2292,7 +2292,7 @@ line-color: transparent;
       text-clip: false;
       text-placement: line;
       text-face-name: @book-fonts;
-      text-halo-radius: 2;
+      text-halo-radius: 0;
     }
     [zoom >= 14] {
       text-size: 19;
@@ -2310,7 +2310,7 @@ line-color: transparent;
       text-clip: false;
       text-placement: line;
       text-face-name: @book-fonts;
-      text-halo-radius: 2;
+      text-halo-radius: 0;
     }
     [zoom >= 14] {
       text-size: 18;
@@ -2322,23 +2322,23 @@ line-color: transparent;
   [highway = 'tertiary'] {
     [zoom >= 15] {
       text-name: "[name]";
-      text-size: 17;
+      text-size: 18;
       text-fill: #000;
       text-spacing: 300;
       text-clip: false;
       text-placement: line;
       text-face-name: @book-fonts;
-      text-halo-radius: 2;
+      text-halo-radius: 0;
     }
     [zoom >= 17] {
-      text-size: 19;
+      text-size: 14;
     }
   }
   [highway = 'proposed'],
   [highway = 'construction'] {
     [zoom >= 13] {
       text-name: "[name]";
-      text-size: 15;
+      text-size: 12;
       text-fill: #000;
       text-placement: line;
       text-face-name: @book-fonts;
@@ -2352,7 +2352,7 @@ line-color: transparent;
   [highway = 'unclassified'] {
     [zoom >= 15] {
       text-name: "[name]";
-      text-size: 14;
+      text-size: 11;
       text-spacing: 300;
       text-clip: false;
       text-placement: line;
