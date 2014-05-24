@@ -164,7 +164,7 @@ line-color: transparent;
 }
 
 #highway-area-fill {
-  polygon-opacity: 0.5;
+  polygon-opacity: 0.25;
   [feature = 'highway_living_street'][zoom >= 14] {
     polygon-fill: #ccc;
   }
@@ -471,7 +471,7 @@ line-color: transparent;
 }
 
 #minor-roads-casing {
-  line-opacity: 0.75;
+  line-opacity: 0.35;
   line-color: transparent;
   [highway = 'motorway'][tunnel != 'yes'] {
     [zoom >= 12] {
@@ -604,7 +604,7 @@ line-color: transparent;
 }
 
 #minor-roads-fill::links {
-  line-opacity: 0.75;
+  line-opacity: 0.5;
   line-color: transparent;
   [feature = 'highway_motorway_link'][tunnel != 'yes'] {
     [zoom >= 12] {
@@ -668,7 +668,7 @@ line-color: transparent;
 }
 
 #minor-roads-fill {
-  line-opacity: 0.65;
+  line-opacity: 0.45;
   line-color: transparent;
   /*
    * The construction rules for small roads are strange, since if construction is null its assumed that
@@ -811,7 +811,7 @@ line-color: transparent;
   [feature = 'highway_road'] {
     [zoom >= 1][zoom < 10] {
       line-width: 0.5;
-      line-opacity: 0.1;
+      line-opacity: 0.15;
       line-color: @residential-thin;
     }
     [zoom >= 10][zoom < 13] {
@@ -821,7 +821,7 @@ line-color: transparent;
   }
 
   [feature = 'highway_road'][zoom >= 1]{
-      line-opacity:0.05;
+      line-opacity:0.15;
     }
     [zoom >= 13] {
     line-width: 2;
@@ -1333,7 +1333,7 @@ line-color: transparent;
       b/line-join: round;
       b/line-cap: round;
       c/line-width: 2;
-      c/line-color: blue;
+      c/line-color: cyan;
       c/line-opacity: 0.5;
       c/line-dasharray: 1,3;
       c/line-join: round;
@@ -1735,6 +1735,7 @@ line-color: transparent;
   }
 
   ::bridges_fill {
+    line-opacity: 0.5;
     [feature = 'highway_motorway'],
     [feature = 'highway_motorway_link'] {
       [zoom >= 12] {
@@ -1995,6 +1996,7 @@ line-color: transparent;
 
 #roads {
   line-color: transparent;
+  line-opacity: 0.33;
   [feature = 'highway_motorway'],
   [feature = 'highway_motorway_link'] {
     [zoom >= 5][zoom < 12] {
@@ -2207,7 +2209,7 @@ line-color: transparent;
 
   [highway = 'trunk'][zoom >= 13] {
     shield-name: "[ref]";
-    shield-size: 10;
+    shield-size: 16;
     shield-fill: #fff;
     shield-placement: line;
     shield-file: url("symbols/tru_shield[length].png");
@@ -2218,7 +2220,7 @@ line-color: transparent;
 
   [highway = 'primary'][zoom >= 13] {
     shield-name: "[ref]";
-    shield-size: 10;
+    shield-size: 16;
     shield-fill: #fff;
     shield-placement: line;
     shield-file: url("symbols/pri_shield[length].png");
@@ -2240,12 +2242,12 @@ line-color: transparent;
 
   [highway = 'tertiary'][bridge = 'no'][zoom >= 13] {
     shield-name: "[ref]";
-    shield-size: 10;
+    shield-size: 16;
     shield-fill: #fff;
     shield-placement: line;
     shield-file: url("symbols/ter_shield[length].png");
-    shield-spacing: 750;
-    shield-min-distance: 30;
+    shield-spacing: 1250;
+    shield-min-distance: 90;
     shield-face-name: @bold-fonts;
   }
 
@@ -2254,10 +2256,10 @@ line-color: transparent;
     line-color: transparent;
     [zoom >= 15][bridge = 'no'] {
       text-name: "[ref]";
-      text-size: 13;
+      text-size: 14;
       text-fill: #000;
-      text-face-name: @bold-fonts;
-      text-min-distance: 18;
+      text-face-name: @book-fonts;
+      text-min-distance: 48;
       text-halo-radius: 1;
       text-spacing: 750;
       text-clip: false;
@@ -2286,23 +2288,23 @@ line-color: transparent;
   [highway = 'primary'] {
     [zoom >= 13] {
       text-name: "[name]";
-      text-size: 11;
+      text-size: 19;
       text-fill: black;
       text-spacing: 300;
       text-clip: false;
       text-placement: line;
       text-face-name: @book-fonts;
-      text-halo-radius: 0;
+      text-halo-radius: 2;
     }
     [zoom >= 14] {
-      text-size: 12;
+      text-size: 19;
     }
     [zoom >= 15] {
-      text-size: 13;
+      text-size: 21;
     }
   }
   [highway = 'secondary'] {
-    [zoom >= 13] {
+    [zoom >= 18] {
       text-name: "[name]";
       text-size: 11;
       text-fill: black;
@@ -2310,35 +2312,35 @@ line-color: transparent;
       text-clip: false;
       text-placement: line;
       text-face-name: @book-fonts;
-      text-halo-radius: 0;
+      text-halo-radius: 2;
     }
     [zoom >= 14] {
-      text-size: 12;
+      text-size: 18;
     }
     [zoom >= 15] {
-      text-size: 13;
+      text-size: 20;
     }
   }
   [highway = 'tertiary'] {
     [zoom >= 15] {
       text-name: "[name]";
-      text-size: 12;
+      text-size: 17;
       text-fill: #000;
       text-spacing: 300;
       text-clip: false;
       text-placement: line;
       text-face-name: @book-fonts;
-      text-halo-radius: 0;
+      text-halo-radius: 2;
     }
     [zoom >= 17] {
-      text-size: 14;
+      text-size: 19;
     }
   }
   [highway = 'proposed'],
   [highway = 'construction'] {
     [zoom >= 13] {
       text-name: "[name]";
-      text-size: 12;
+      text-size: 15;
       text-fill: #000;
       text-placement: line;
       text-face-name: @book-fonts;
@@ -2352,7 +2354,7 @@ line-color: transparent;
   [highway = 'unclassified'] {
     [zoom >= 15] {
       text-name: "[name]";
-      text-size: 11;
+      text-size: 14;
       text-spacing: 300;
       text-clip: false;
       text-placement: line;
@@ -2386,44 +2388,44 @@ line-color: transparent;
     [oneway = 'yes'] {
       a/line-width: 1;
       a/line-dasharray: 0,12,10,152;
-      a/line-color: #6c70d5;
+      a/line-color: #fff;
       a/line-join: bevel;
       a/line-clip: false;
       b/line-width: 2;
       b/line-dasharray: 0,12,9,153;
-      b/line-color: #6c70d5;
+      b/line-color: #fff;
       b/line-join: bevel;
       b/line-clip: false;
       c/line-width: 3;
       c/line-dasharray: 0,18,2,154;
-      c/line-color: #6c70d5;
+      c/line-color: #fff;
       c/line-join: bevel;
       c/line-clip: false;
       d/line-width: 4;
       d/line-dasharray: 0,18,1,155;
-      d/line-color: #6c70d5;
+      d/line-color: #fff;
       d/line-join: bevel;
       d/line-clip: false;
     }
     [oneway = '-1'] {
       a/line-width: 1;
       a/line-dasharray: 0,12,10,152;
-      a/line-color: #6c70d5;
+      a/line-color: #fff;
       a/line-join: bevel;
       a/line-clip: false;
       b/line-width: 2;
       b/line-dasharray: 0,13,9,152;
-      b/line-color: #6c70d5;
+      b/line-color: #fff;
       b/line-join: bevel;
       b/line-clip: false;
       c/line-width: 3;
       c/line-dasharray: 0,14,2,158;
-      c/line-color: #6c70d5;
+      c/line-color: #fff;
       c/line-join: bevel;
       c/line-clip: false;
       d/line-width: 4;
       d/line-dasharray: 0,15,1,158;
-      d/line-color: #6c70d5;
+      d/line-color: #fff;
       d/line-join: bevel;
       d/line-clip: false;
     }

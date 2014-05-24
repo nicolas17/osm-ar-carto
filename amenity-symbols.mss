@@ -31,7 +31,7 @@
     }
     text-name: "[name]";
     text-size: 8;
-    text-fill: #020711;
+    text-fill: #111;
     text-face-name: @oblique-fonts;
     text-halo-radius: 1;
     text-placement: interior;
