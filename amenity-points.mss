@@ -191,7 +191,10 @@
       point-file: url('symbols/parking.naranja.16.png');
       marker-opacity: 0.63;
     }
-    [access = 'fee'] {
+    [access = 'permissive'] {
+      point-file: url('symbols/parking.e.16.png');
+    }
+    [access = 'private'] {
       point-file: url('symbols/parking.gris.16.png');
       marker-opacity: 0.63;
     }
