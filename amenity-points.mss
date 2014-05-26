@@ -165,13 +165,14 @@
 
   [amenity = 'parking'][zoom >= 15]::amenity {
     point-placement: interior;
-    [access = 'public'] {
-      point-file: url('symbols/parking.e.16.png');
-    }
+    point-file: url('symbols/parking.e.16.png');
     [access != ''][access != 'public'][access != 'yes'] {
       point-file: url('symbols/parking.naranja.16.png');
     }
-    [access = 'fee'] {
+    [access = 'permissive'] {
+      point-file: url('symbols/parking.e.16.png');
+    }
+    [access = 'private'] {
       point-file: url('symbols/parking.gris.16.png');
     }
   }
