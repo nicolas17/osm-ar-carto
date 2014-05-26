@@ -143,11 +143,12 @@
   [feature = 'landuse_forest'] {
     [zoom >= 8][zoom < 14] {
       polygon-fill: #8dc56c;
-      polygon-opacity: 0.2;
+      polygon-opacity: 0.25;
     }
     [zoom >= 14] {
       polygon-pattern-file: url('symbols/forest.png');
-      polygon-opacity: 0.2;
+      polygon-fill: #8dc56c;
+      polygon-opacity: 0.33;
     }
   }
 
@@ -158,7 +159,7 @@
 
   [feature = 'landuse_farm'],
   [feature = 'landuse_farmland'] {
-    polygon-opacity: 0.2;
+    polygon-opacity: 0.25;
     [zoom >= 9] {
       polygon-fill: #ead8bd;
     }
@@ -178,6 +179,7 @@
 
   [feature = 'landuse_retail'][zoom >= 10] {
     polygon-fill: #f1dada;
+    polygon-opacity: 0.2;
     [zoom >= 15] {
       line-width: 0.3;
       line-color: red;
@@ -234,6 +236,7 @@
 
   [feature = 'natural_desert'][zoom >= 8] {
     polygon-fill: #e3b57a;
+    polygon-opacity: 0.2;
   }
 
   [feature = 'natural_sand'][zoom >= 10] {
@@ -243,6 +246,7 @@
 
   [feature = 'natural_heath'][zoom >= 10] {
     polygon-fill: #d6d99f;
+    polygon-opacity: 0.2;
   }
 
   [feature = 'natural_grassland'][zoom >= 10] {
@@ -266,6 +270,7 @@
   [feature = 'amenity_hospital'],
   [feature = 'amenity_kindergarten'] {
     [zoom >= 10] {
+      polygon-opacity: 0.2;
       polygon-fill: #f0f0d8;
       [zoom >= 12] {
         line-width: 0.3;
@@ -285,6 +290,7 @@
 
   [feature = 'aeroway_apron'][zoom >= 12] {
     polygon-fill: #e9d1ff;
+    polygon-opacity: 0.2;
   }
 
   [feature = 'aeroway_aerodrome'][zoom >= 12] {
@@ -295,12 +301,14 @@
   }
 
   [feature = 'natural_beach'][zoom >= 13] {
-    polygon-pattern-file: url('symbols/beach.png');
+      polygon-opacity: 0.33;
+      polygon-fill: wheat;
   }
 
   [feature = 'highway_services'],
   [feature = 'highway_rest_area'] {
     [zoom >= 14] {
+      polygon-opacity: 0.33;
       polygon-fill: #efc8c8;
     }
   }

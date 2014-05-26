@@ -163,12 +163,17 @@
     point-placement: interior;
   }
 
-  [amenity = 'parking'][zoom >= 15]::amenity {
-    point-file: url('symbols/parking.e.16.png');
+  [amenity = 'parking'][zoom >= 16]::amenity {
     point-placement: interior;
-    [access != ''][access != 'public'][access != 'yes'] {
-      point-file: url('symbols/parking_private.p.16.png');
+    [access != ''][access = 'public'][access = 'yes'] {
+        point-file: url('symbols/parking.e.16.png');
     }
+    [zoom >= 17]{
+      [access != ''][access != 'public'][access != 'yes'] {
+        point-file: url('symbols/parking.naranja.16.png');
+      }
+    }
+    
   }
 
   [amenity = 'pharmacy'][zoom >= 17]::amenity {
