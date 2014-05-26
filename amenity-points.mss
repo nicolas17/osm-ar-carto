@@ -171,7 +171,7 @@
     [access != ''][access != 'public'][access != 'yes'] {
       point-file: url('symbols/parking.naranja.16.png');
     }
-    [fee = 'yes'] {
+    [access = 'fee'] {
       point-file: url('symbols/parking.gris.16.png');
     }
   }
