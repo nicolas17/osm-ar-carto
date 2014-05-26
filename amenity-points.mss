@@ -181,13 +181,19 @@
     point-placement: interior;
   }
 
-  [feature = 'amenity_parking'][zoom >= 16] {
-    point-file: url('symbols/parking.e.16.png');
-    marker-placement: interior;
+  [feature = 'amenity_parking'][zoom >= 15] {
+    point-placement: interior;
     marker-clip: false;
-    marker-fill: @transportation-icon;
+    [access = 'public'] {
+      point-file: url('symbols/parking.e.16.png');
+    }
     [access != ''][access != 'public'][access != 'yes'] {
-      marker-opacity: 0.33;
+      point-file: url('symbols/parking.naranja.16.png');
+      marker-opacity: 0.63;
+    }
+    [fee = 'yes'] {
+      point-file: url('symbols/parking.gris.16.png');
+      marker-opacity: 0.63;
     }
   }
 
