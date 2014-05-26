@@ -191,7 +191,7 @@
       point-file: url('symbols/parking.naranja.16.png');
       marker-opacity: 0.63;
     }
-    [fee = 'yes'] {
+    [access = 'fee'] {
       point-file: url('symbols/parking.gris.16.png');
       marker-opacity: 0.63;
     }
